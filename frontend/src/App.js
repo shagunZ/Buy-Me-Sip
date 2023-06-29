@@ -7,7 +7,7 @@ import Cancel from './pages/Cancel';
 import Store from './pages/Store';
 import Success from './pages/Success';
 import CartProvider from './CartContext';
-
+import Footer from './components/Footer';
 
 
 function App() {
@@ -22,6 +22,8 @@ function App() {
       <Route path="/cancel" element={<Cancel/>} />
            </Routes>
       </BrowserRouter>
+      <hr className='mt-5'></hr>
+      <Footer/>
     </Container>
     </CartProvider>
   );

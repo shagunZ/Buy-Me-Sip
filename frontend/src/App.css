@@ -1,5 +1,26 @@
 .App {
   text-align: center;
+font-family:'Times New Roman', Times, serif ;
+
+}
+Button{
+  background: linear-gradient(90deg, #a11242 0%, #411d0e 100%);
+}
+.card-title{
+color:brown;
+font-family:'Times New Roman', Times, serif ;
+padding:7% auto;
+width:auto;
+border-radius:1rem;
+background:#f5f5f5;
+box-shadow:inset -1em -.5em rgba(0,.05), inset
+1em.5em rgba(0,.05),
+0 0 1em rgba(.05,.05,.1);
+}
+.card-text,.navbar-brand{
+color:brown;
+font-family:'Times New Roman', Times, serif ;
+margin-top:5%;
 }
 
 .App-logo {

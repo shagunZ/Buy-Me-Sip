@@ -4,6 +4,9 @@ import { useState,useContext } from 'react';
 import { CartContext } from '../CartContext';
 import ProductCard from './ProductCard';
 import CartProduct from './CartProduct';
+import Image from 'react-bootstrap/Image';
+
+
 const NavbarComponent = () => {
 
     const cart = useContext(CartContext);
@@ -33,7 +36,16 @@ const NavbarComponent = () => {
   return (
     <>
    <Navbar expand="sm">
-    <Navbar.Brand href="/">Ecommerce</Navbar.Brand>
+    <Navbar.Brand href="/">
+    <Image
+            alt="logo"
+            src="https://plus.unsplash.com/premium_photo-1670015230537-5c6253727a36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y3VwfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+            width="90px"
+            roundedCircle
+          />
+      </Navbar.Brand>
+    <Navbar.Brand href="/">
+      Buy Me Sip</Navbar.Brand>
     <Navbar.Toggle/>
     <Navbar.Collapse className="justify-content-end"/>
     <Button onClick={handleShow}>Cart {productsCount} items</Button>
