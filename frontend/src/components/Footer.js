@@ -1,11 +1,14 @@
 import React from 'react'
 
-import { CDBFooter, CDBFooterLink, CDBBtn, CDBIcon, CDBContainer,CDBBox } from 'cdbreact';
+// import { CDBFooter, CDBFooterLink, CDBBtn, CDBIcon, CDBContainer,CDBBox } from 'cdbreact';
+import { CDBBtn, CDBIcon,CDBBox } from 'cdbreact';
 import Image from 'react-bootstrap/Image';
 
 const Footer = () => {
   return (
     <>
+      <hr className='mt-5'></hr>
+
     <CDBBox
       display="flex"
       justifyContent="between"

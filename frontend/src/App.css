@@ -3,6 +3,8 @@
 font-family:'Times New Roman', Times, serif ;
 
 }
+
+
 Button{
   background: linear-gradient(90deg, #a11242 0%, #411d0e 100%);
 }
@@ -20,7 +22,7 @@ box-shadow:inset -1em -.5em rgba(0,.05), inset
 .card-text,.navbar-brand{
 color:brown;
 font-family:'Times New Roman', Times, serif ;
-margin-top:5%;
+margin-top:2%;
 }
 
 .App-logo {

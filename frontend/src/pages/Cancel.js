@@ -8,7 +8,16 @@ const Cancel = () => {
 
   return (
     <div>
-      <h1>OOPS!...Something went wrong</h1>
+
+      <div class="cardsuccess">
+      <div style={{borderRadius:"200px",height:"200px",width:"200px",background:"#F8FAF5",margin:"0 auto"}}>
+        <i className='checkpayment' class="checkmark checkpayment">❌</i>
+      </div>
+        <h2 style={{color:"brown"}}>Error</h2> 
+        <p style={{color:"brown"}}>Something went wrong.<br/> Please try again!</p>
+      </div>
+      <h2 style={{color:"brown"}}>OOPS!...Something went wrong</h2>
+
       <Button onClick={()=>navigate("/")}>Buy Again</Button>
 
     </div>

@@ -8,7 +8,7 @@ import Store from './pages/Store';
 import Success from './pages/Success';
 import CartProvider from './CartContext';
 import Footer from './components/Footer';
-
+import HomePage from './components/HomePage'
 
 function App() {
   return (
@@ -18,11 +18,11 @@ function App() {
      <BrowserRouter>
      <Routes>
       <Route index element={<Store/>} />
+      <Route path="/home" element={<HomePage/>} />
       <Route path="/success" element={<Success/>} />
       <Route path="/cancel" element={<Cancel/>} />
            </Routes>
       </BrowserRouter>
-      <hr className='mt-5'></hr>
       <Footer/>
     </Container>
     </CartProvider>

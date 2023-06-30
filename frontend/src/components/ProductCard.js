@@ -2,7 +2,7 @@ import React from 'react'
 import { useContext } from 'react';
 import { CartContext } from '../CartContext';
 import {Card,Button,Form,Row,Col} from 'react-bootstrap'
-import { CDBBtn, CDBContainer } from "cdbreact";
+import { CDBBtn } from "cdbreact";
 
 const ProductCard = (props) => {
     const product = props.product;
@@ -23,8 +23,8 @@ const ProductCard = (props) => {
            <Col>
             {productQuantity > 0 ?
                <>
-               <Form as={Row}>
-                   <Form.Label column="true" sm="6">Cart: {productQuantity}</Form.Label>
+               <Form as={Row} style={{justifyContent:"center"}}>
+                   <Form.Label column="true" sm="6" style={{color:"brown"}}>Cart: {productQuantity}</Form.Label>
                    <Row>
                    <Col sm="6">
                        <Button sm="6" onClick={() => cart.addOneToCart(product.id)} className="mx-2">+</Button>

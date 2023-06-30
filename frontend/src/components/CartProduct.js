@@ -11,7 +11,7 @@ const CartProduct = (props) => {
     const productData = getProductData(id);
   return (
     <>
-    <h3>{productData.title}</h3>
+    <h3 style={{color:"brown"}}>{productData.title}</h3>
     <p>{quantity} total</p>
     <p>${ (quantity * productData.price).toFixed(2) }</p>
     <Button size="sm" onClick={() => cart.deleteFromCart(id)}>Remove</Button>

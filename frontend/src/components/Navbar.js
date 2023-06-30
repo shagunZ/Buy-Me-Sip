@@ -1,8 +1,7 @@
 import React from 'react'
-import {Button,Container,Navbar,Modal, NavbarBrand} from 'react-bootstrap';
+import {Button,Navbar,Modal} from 'react-bootstrap';
 import { useState,useContext } from 'react';
 import { CartContext } from '../CartContext';
-import ProductCard from './ProductCard';
 import CartProduct from './CartProduct';
 import Image from 'react-bootstrap/Image';
 
@@ -55,7 +54,7 @@ const NavbarComponent = () => {
     <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
 
-<Modal.Title>Shopping cart</Modal.Title>
+{/* <Modal.Title>MY CART</Modal.Title> */}
 
 </Modal.Header>
 <Modal.Body>
@@ -64,11 +63,11 @@ const NavbarComponent = () => {
     {cart.items.map((currentProduct,index)=>(
 <CartProduct key={index} id={currentProduct.id} quantity={currentProduct.quantity}/>
     ))}
-    <h1>Total: {cart.getTotalCost().toFixed(2)}</h1>
+    <h1 style={{color:"brown"}}>Total: {cart.getTotalCost().toFixed(2)}</h1>
     <Button variant='success' onClick={checkout} >Checkout</Button>
     </>
     :
-    <h1>cart is empty</h1>
+    <h1 style={{color:"brown"}}>cart is empty</h1>
     }
 </Modal.Body>
 
